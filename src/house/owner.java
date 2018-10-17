@@ -11,16 +11,16 @@ public class owner{
         this.age = age;
     }
 
-public void getFood(int foodForDog){
-    do {
+    public int getFood(int foodForDog){
+      do {
         food =- foodForDog;
-    }while( food > 80 );
-    age++;
-}
+      }while( food > 80 );
+        age++;
+        return food;
+    }
 
     @Override
     public String toString(){
-        return  fullname + " is the owner. \nFood left: " + (food/1000) + " kg.\nAnd it is " +
-                (age/365) + " year(s) old.\n";
+        return  fullname + " is the owner. \nFood left: " + (food/1000) + " kg.\nAnd it is " + (age/365) + " year(s) old.\n";
     }
 }

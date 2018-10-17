@@ -1,10 +1,17 @@
 package house;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
+
         dog Dog = new dog("Pitrushka", 1000*1, 365*1.6);
         owner Owner = new owner("Ion Petru", 1000*80, 365*20);
-System.out.println(Dog);
+
+        while(Owner.food!=80){
+         Dog.eat(Owner.getFood(200));
+         System.out.println(Dog);
+         System.out.println(Owner);
+        }
+
     }
 }
 
