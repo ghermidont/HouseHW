@@ -2,7 +2,17 @@ package house;
 
 public class main {
     public static void main(String[] args) {
-        dog Dog = new dog("Petrushka", 1, 1.7);
-        System.out.println(Dog);
+        dog Dog = new dog("Pitrushka", 1000*1, 365*1.6);
+        owner Owner = new owner("Ion Petru", 1000*80, 365*20);
+System.out.println(Dog);
     }
 }
+
+   /*   1. на какое количество дней хватит еды щенку?
+        2. на сколько килограммов увеличился вес щенка после окончания периода кормления?
+        3. сколько полных лет будет (целое число!!!) владельцу и щенку в конце периода кормления?
+
+        ! правильным результатом для изложенных выше условий было бы:
+        400 дней
+        0.8kg
+        21 и 3 года соответственно*/
