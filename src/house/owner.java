@@ -2,25 +2,24 @@ package house;
 
 public class owner{
     public String fullname;   // кличка
-    public int food; // вес (граммы)
-    public int age;    // возраст (дни!!!)
+    public double food; // вес (граммы)
+    public int ownerAge;    // возраст (дни!!!)
 
-    public owner(String name, int foodReserve, int age ) {
+    public owner(String name, double foodReserve, int age ) {
         this.fullname = name;
         this.food = foodReserve;
-        this.age = age;
+        this.ownerAge = age;
     }
 
     public int getFood(int foodForDog){
-      do {
-        food =- foodForDog;
-      }while( food > 80 );
-        age++;
-        return food;
+        food -= foodForDog;
+        ownerAge++;
+        return foodForDog;
     }
 
     @Override
     public String toString(){
-        return  fullname + " is the owner. \nFood left: " + (food/1000) + " kg.\nAnd it is " + (age/365) + " year(s) old.\n";
+        return  fullname + " is the owner. \nFood left: " + ( food / 1000 ) +
+                " kg.\nAnd it is " + ( ownerAge / 365 ) + " year(s) old.\n";
     }
 }
